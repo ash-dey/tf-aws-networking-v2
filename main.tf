@@ -3,7 +3,7 @@ provider "aws" {
 
   assume_role {
     # The role ARN within Account B to AssumeRole into. Created in step 1.
-    role_arn    = var.role_arn
+    role_arn = var.role_arn
   }
   default_tags {
     tags = {
