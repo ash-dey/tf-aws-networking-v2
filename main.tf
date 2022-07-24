@@ -11,9 +11,9 @@ provider "aws" {
       App         = var.app
       Owner       = var.owner
       Deploy      = var.deploy
+    }
   }
 }
-
 
 resource "aws_iam_policy" "s3_bucket_policy" {
   name = "ash-policy-s3-list"
