@@ -15,18 +15,3 @@ terraform {
   # define terraform cloud targets e.g. organization and workspace
   cloud {}
 }
-
-# Define credential details for the provider
-provider "aws" {
-  # access_key = var.aws_access_key
-  # secret_key = var.aws_secret_key
-  # region  = var.region
-  default_tags {
-    tags = {
-      Environment = var.env
-      App         = var.app
-      Owner       = var.owner
-      Deploy      = var.deploy
-    }
-  }
-}
