@@ -68,7 +68,7 @@ jobs:
         run: exit 1
 
       - name: Terraform apply
-        run: terraform apply -auto-approve -input=false -var-file=./vars/${GITHUB_JOB}.tfvars
+        run: terraform apply -auto-approve -input=false -var-file=./vars/${GITHUB_JOB}.tfvars -destroy
 
   uat:
     name: Deploy to uat
